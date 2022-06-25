@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORM GROUP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <a id="Logo"  href="">Storm</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-haspopup="true" aria-label="Abrir Menu"    aria-controls="menu"aria-expanded="false"> Menu
+
+                <span id="hamburger"></span>
+            </button>
+    <ul id="menu" role="menu">
+        <li><a href="#"> Home </a></li>
+        <li><a href="#ft1"> Frutas </a></li>
+        <li><a href="#cot3"> Pagamentos </a></li>
+        <li><a href="#cot3"> Contato </a></li>
+        <li><a href="indexpc.html"> Desktop </a></li>
+
+
+    </ul>
+
+        </nav>
+
+        
+
+    </header>
+   
+    
+      
+    <script> 
+    
+    const btnMobile = document.getElementById ('btn-mobile');
+
+    function toggleMenu(event) {
+        if (event.type ==='touchstart') event.preventDefault()
+        const nav= document.getElementById ('nav');
+    nav.classList.toggle('active');
+    const active= nav.classList.contains('active')
+    event.currentTarget.setAttribute('aria-expanded', active);
+    if (active){
+        event.currentTarget.setAttribute ('aria-label', 'Fechar Menu');
+     } else {
+        event.currentTarget.setAttribute ('aria-label', 'Abrir Menu')
+
+        }
+
+
+        
+    }
+    btnMobile.addEventListener ('click', toggleMenu);
+    btnMobile.addEventListener ('touchstart', toggleMenu);
+
+
+    </script>
+
+<div class="frutas">
+    <div class="AC">
+        <h3 id="ft1">Acerola</h3>
+    <p>Acerola é uma fruta tropical com sabor que varia do azedo ao doce e
+        que pode ser consumida crua ou utilizada em diversas receitas, como geleias, sucos e 
+        sorvetes. Além do sabor agradável, o alimento apresenta diversos benefícios para a 
+        saúde e o bem-estar, como fortalecimento da imunidade e combate ao 
+        envelhecimento precoce. .</p>
+        <img src="acerola.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+
+    
+</div>
+<div class="BA">
+    <h3>Bacuri</h3>
+    <p> Bacuri (Platonis insignis Mart.) é uma árvore nativa da floresta
+        amazônica, que pode atingir de 20 a 40 metros de altura. A espécie dá origem a um 
+        fruto de mesmo nome, de sabor agridoce e rico em potássio, fósforo, cálcio, zinco, 
+        magnésio, fibras, antioxidantes, vitamina C e vitamina A.</p>    
+        <img src="bacuri.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>
+<div class="CA">
+    <h3>Caju</h3>
+    <p>O caju, o pseudofruto, é suculento e rico em vitamina C e ferro. Depois do 
+        beneficiamento do caju, preparam-se sucos, mel, doces, como cajuada, 
+        caju passas, rapadura de caju.</p>
+        <img src="caju.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>       
+<div class="GR">
+    <h3>Graviola</h3>
+    <p> A graviola é uma fruta de casca verde e espinhos, contendo uma 
+        polpa branca, macia de sabor doce e levemente ácido, podendo ser consumida ao 
+        natural ou usada no preparo de sucos, mousses, vitaminas e sobremesas.</p>
+        <img src="graviola.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>
+<div class="JA">
+    <h3>Jaca</h3>
+    <p>Muito comum na fabricação de doces e geleias, a jaca é o maior fruto 
+        comestível que nasce em uma árvore. Isso mesmo, diferente da melancia ou do 
+        abacaxi, que são cultivados em plantação rasteira, ela cresce na jaqueira e sua origem 
+        é indiana.</p>
+    <img src="jaca.jpg">
+    <button> <a href="#C1">COMPRAR</button></a>
+</div>   
+<div class="MA">
+    <h3>Maracuja</h3>
+    <p>O maracujá é um fruto rico em flavonoides, vitamina A e vitamina C, 
+        que podem ajudar no tratamento de diversas doenças, como ansiedade, 
+        hiperatividade, e no tratamento de problemas de sono.</p>
+        <img src="maracuja.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>
+<div class="RO">          
+    <h3>Romã</h3>
+    <p>A romã é o fruto da romãzeira (Punica granatum), comum no mediterrâneo 
+        oriental e médio oriente onde a polpa é usada para a preparação de 
+        aperitivos, sobremesa ou algumas vezes em bebida alcoólica.</p>
+        <img src="roma.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>
+<div class="PE">
+    <h3>Pêssego</h3>
+    <p>O pêssego é o fruto do pessegueiro, uma pequena árvore nativa da 
+        China, pertencente à família das rosáceas. O pêssego é rico em 
+        fibras, bom para o funcionamento do intestino.</p>
+        <img src="pessego.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>
+<div class="UM">
+    <h3>Umbu</h3>
+    <p>Fruto agridoce por mesclar sabores cítrico e adocicado, o umbu é 
+        nativo do semiárido brasileiro. Versátil, ele pode ser consumido 
+        in natura ou harmonizado em pratos doces e salgados de diferentes 
+        texturas, de seca à gelatinosa.</p>
+        <img src="umbu.jpg">
+        <button> <a href="#C1">COMPRAR</button></a>
+</div>    
+</div>
+
+<div class="pagamento">
+    <h2>Selecione o Produto</h2>
+    <label for="frutas"></label>
+        <select id="frutas" name="frutas">
+            <option value="#"></option>
+            <option value="AC">ACEROLA</option>
+            <option value="BA">BACURI</option>
+            <option value="CA">CAJU</option>
+            <option value="GR">GRAVIOLA</option>
+            <option value="JA">JACA</option>
+            <option value="MA">MARACUJÁ</option>
+            <option value="RO">ROMÃ</option>
+            <option value="UM">UMBU</option>
+        </select> <br>
+ 
+    </div> 
+<div class="pagamento3">
+<h2>Selecione a Quantidade</h2>    
+<input type="number" placeholder="Unidade em Kg">
+<br>
+<img src="formaspag.PNG">
+<br>
+<button id="cot3">FINALIZAR PEDIDO</button></a>
+</div>
+
+
+<div class="contato">
+    <p id="cot3">equipestorm@gmail.com, +55 (91) 9.40028922</p>
+</div>
+</body>
+</html>
